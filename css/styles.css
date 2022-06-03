@@ -1,0 +1,331 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+/* Сердечки перед ссылками */
+/* a::before {
+  content: "♥️";
+  color: brown;
+} */
+
+/* птички твиттер перед ссылками */
+a::before {
+  content: url(../images/icons8-twitter-16.svg);
+  vertical-align: middle;
+}
+
+/* animation logo */
+
+.header-logo::before,
+.footer-logo::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background: url(../images/icons8-twitter.svg);
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+/* animation logo */
+
+.header-logo:hover.header-logo::before,
+.footer-logo:hover.footer-logo::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-image: url(../images/icons8-twitter.gif);
+}
+
+/* Сброс стилей / Reset styles */
+
+p,
+h1,
+h2,
+h3,
+li,
+img {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  color: currentColor;
+}
+address {
+  text-decoration: none;
+}
+/* Сброс стилей / Reset styles */
+
+:root {
+  --main-color: #212121;
+  --highlight-color: #2196f3;
+  --header-link-color: #757575;
+  --main-tittle-color: #ffffff;
+  --main-background-color: #2f303a;
+  --description-text-color: #757575;
+  --job-title-color: #757575;
+  --footer-background-color: #2f303a;
+  --footer-contact-color: #ffffff;
+  --portfolio-speciality-color: #757575;
+  --portfolio-contact-e: rgba(255, 255, 255, 0.6);
+  --typical-margin: 30px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+/* header */
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header-logo-first,
+.footer-logo-first {
+  color: #2196f3;
+}
+
+.header-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-item-link {
+  color: var(--main-color);
+}
+.header-link {
+  color: var(--header-link-color);
+}
+
+.header-item-link:hover,
+.header-item-link:focus,
+.header-link:hover,
+.header-link:focus,
+.contact-e:hover,
+.contact-e:focus,
+.contact:hover,
+.contact:focus {
+  color: var(--highlight-color);
+}
+.header-item-link:active,
+.header-link:active,
+.contact-e:active,
+.contact:active {
+  color: #ffa500;
+}
+
+/* main */
+
+.main-box {
+  background-color: var(--main-background-color);
+}
+
+.main {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-tittle-color);
+  max-width: 696px;
+  padding: 200px 252px 30px 252px;
+}
+
+.main-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  color: var(--main-tittle-color);
+  background: var(--highlight-color);
+  /* выровнять кнопку по центру */
+  margin: 0 auto;
+  display: block;
+  /* выровнять кнопку по центру */
+  width: 200px;
+  height: 50px;
+}
+.div-btn {
+  padding-bottom: 200px;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* прячем заголовок от пользователя, Google  видит заголовок */
+
+h2[class="visually-hidden"],
+h1[class="visually-hidden"] {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.description-list {
+  padding: 94px 0;
+  display: flex;
+}
+.description-block {
+  width: 270px;
+  margin-right: var(--typical-margin);
+  display: inline-block;
+}
+.last {
+  margin-right: 0;
+}
+
+.description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.description-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
+}
+
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.works {
+  padding-bottom: 50px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-color);
+}
+.job-title {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--job-title-color);
+}
+
+/* footer */
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: #2f303a;
+}
+.contacts {
+  background: var(--footer-background-color);
+  font-style: normal;
+}
+.contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+}
+.contact-e {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--portfolio-contact-e);
+}
+
+/* Портфолио */
+
+.portfolio-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  box-sizing: border-box;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+}
+.portfolio-btn-list {
+  text-align: center;
+}
+ul.portfolio-btn-list li {
+  display: inline-block;
+}
+
+.review {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+.speciality {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--portfolio-speciality-color);
+}
