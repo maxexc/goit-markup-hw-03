@@ -21,6 +21,7 @@ html {
 /* птички твиттер перед ссылками */
 a::before {
   content: url(../images/icons8-twitter-16.svg);
+  vertical-align: middle;
 }
 
 /* animation logo */
@@ -33,7 +34,7 @@ a::before {
   display: inline-block;
   background: url(../images/icons8-twitter.svg);
   background-size: cover;
-  vertical-align: middle;
+  vertical-align: top;
   margin-right: 4px;
 }
 
@@ -42,10 +43,11 @@ a::before {
 .header-logo:hover.header-logo::before,
 .footer-logo:hover.footer-logo::before {
   content: "";
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   display: inline-block;
   background-image: url(../images/icons8-twitter.gif);
+  vertical-align: top;
 }
 
 /* Сброс стилей / Reset styles */
