@@ -254,6 +254,10 @@ h1[class="visually-hidden"] {
   color: var(--description-text-color);
 }
 
+ul {
+  line-height: 0; /* ...и вертикальные в некоторых браузерах */
+}
+
 .team {
   font-weight: 700;
   font-size: 36px;
