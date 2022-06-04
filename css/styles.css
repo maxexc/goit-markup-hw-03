@@ -21,7 +21,6 @@ html {
 /* птички твиттер перед ссылками */
 a::before {
   content: url(../images/icons8-twitter-16.svg);
-  vertical-align: middle;
 }
 
 /* animation logo */
@@ -29,8 +28,8 @@ a::before {
 .header-logo::before,
 .footer-logo::before {
   content: "";
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   display: inline-block;
   background: url(../images/icons8-twitter.svg);
   background-size: cover;
@@ -105,11 +104,25 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 93px;
 }
 
 .header-logo-first,
 .footer-logo-first {
   color: #2196f3;
+}
+
+.header-link .container,
+.header-list,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .header-text {
@@ -118,11 +131,18 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.header-item:not(:last-child) {
+  margin-right: 50px;
+  padding: 32px 0;
+}
 .header-item-link {
   color: var(--main-color);
 }
 .header-link {
   color: var(--header-link-color);
+}
+.contact-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header-item-link:hover,
@@ -145,7 +165,7 @@ address {
 /* main */
 
 .main-box {
-  /* background-color: var(--main-background-color); */
+  background-color: var(--main-background-color);
 }
 
 .main {
@@ -160,9 +180,8 @@ address {
   padding-top: 200px;
   padding-bottom: 30px;
   margin: 0 auto;
-
+  /*  */
   outline: 1px solid red;
-  background-color: grey;
 }
 
 .main-btn {
@@ -182,7 +201,7 @@ address {
   margin: 0 auto;
   display: block;
   /* выровнять кнопку по центру */
-  width: 200px;
+  min-width: 200px;
   height: 50px;
 }
 .div-btn {
@@ -231,7 +250,7 @@ h1[class="visually-hidden"] {
 .description-block {
   width: 270px;
   display: inline-block;
-
+  /*  */
   outline: 1px solid red;
 }
 .description-block:not(:last-child) {
@@ -254,10 +273,6 @@ h1[class="visually-hidden"] {
   color: var(--description-text-color);
 }
 
-ul {
-  line-height: 0; /* ...и вертикальные в некоторых браузерах */
-}
-
 .team {
   font-weight: 700;
   font-size: 36px;
@@ -265,10 +280,26 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  padding-bottom: 50px;
 }
 
-.works {
-  padding-bottom: 50px;
+.works-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.works-item:not(:last-child) {
+  margin-right: var(--typical-margin);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: var(--typical-margin);
+  /*  */
+  outline: 1px solid red;
 }
 
 .name {
@@ -276,11 +307,15 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-color);
+  text-align: center;
+  padding-top: 30px;
 }
 .job-title {
   font-size: 16px;
   line-height: 1.19;
   color: var(--job-title-color);
+  text-align: center;
+  padding: 10px 0 30px 0;
 }
 
 /* footer */
