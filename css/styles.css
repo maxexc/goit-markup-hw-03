@@ -321,6 +321,9 @@ h1[class="visually-hidden"] {
 }
 
 /* footer */
+.footer {
+  background: #2f303a;
+}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -329,7 +332,10 @@ h1[class="visually-hidden"] {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
-  background: #2f303a;
+}
+.div-footer-logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .contacts {
   background: var(--footer-background-color);
