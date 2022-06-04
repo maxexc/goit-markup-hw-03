@@ -3,6 +3,15 @@ body {
   color: #212121;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* Сердечки перед ссылками */
 /* a::before {
   content: "♥️";
@@ -83,7 +92,7 @@ address {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px dashed red;
 }
 
 /* header */
@@ -136,7 +145,7 @@ address {
 /* main */
 
 .main-box {
-  background-color: var(--main-background-color);
+  /* background-color: var(--main-background-color); */
 }
 
 .main {
@@ -148,7 +157,12 @@ address {
   text-transform: uppercase;
   color: var(--main-tittle-color);
   max-width: 696px;
-  padding: 200px 252px 30px 252px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+
+  outline: 1px solid red;
+  background-color: grey;
 }
 
 .main-btn {
@@ -216,11 +230,12 @@ h1[class="visually-hidden"] {
 }
 .description-block {
   width: 270px;
-  margin-right: var(--typical-margin);
   display: inline-block;
+
+  outline: 1px solid red;
 }
-.last {
-  margin-right: 0;
+.description-block:not(:last-child) {
+  margin-right: var(--typical-margin);
 }
 
 .description {
