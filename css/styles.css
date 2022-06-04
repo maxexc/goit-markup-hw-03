@@ -266,6 +266,7 @@ h1[class="visually-hidden"] {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+  padding-bottom: 10px;
 }
 
 .description-text {
@@ -285,7 +286,8 @@ h1[class="visually-hidden"] {
   padding-bottom: 50px;
 }
 
-.works-list {
+.works-list,
+.team-list {
   display: flex;
   padding-bottom: 94px;
 }
@@ -294,8 +296,8 @@ h1[class="visually-hidden"] {
   margin-right: var(--typical-margin);
 }
 
-.team-list {
-  display: flex;
+.photo {
+  padding-top: 94px;
 }
 
 .team-item:not(:last-child) {
@@ -376,6 +378,11 @@ h1[class="visually-hidden"] {
 }
 ul.portfolio-btn-list li {
   display: inline-block;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .review {
