@@ -374,6 +374,10 @@ h1[class="visually-hidden"] {
 
 /* Портфолио */
 
+.section-portfolio .container {
+  margin-top: 94px;
+}
+
 .portfolio-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -394,7 +398,6 @@ h1[class="visually-hidden"] {
 .portfolio-btn-list {
   text-align: center;
   padding-bottom: 50px;
-  margin-top: 94px;
 }
 ul.portfolio-btn-list li {
   display: inline-block;
