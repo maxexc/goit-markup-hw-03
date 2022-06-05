@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
-
+/* Репета сказал писать так */
 html {
   box-sizing: border-box;
 }
@@ -40,7 +40,8 @@ a::before {
 
 /* animation logo */
 
-.header-logo:hover.header-logo::before {
+.header-logo:hover.header-logo::before,
+.header-logo:focus.header-logo::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -48,7 +49,8 @@ a::before {
   background-image: url(../images/icons8-twitter.gif);
   vertical-align: top;
 }
-.footer-logo:hover.footer-logo::before {
+.footer-logo:hover.footer-logo::before,
+.footer-logo:focus.footer-logo::before {
   content: "";
   width: 30px;
   height: 30px;
