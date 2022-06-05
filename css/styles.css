@@ -105,6 +105,10 @@ address {
 
 /* header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -121,11 +125,6 @@ address {
   color: #2196f3;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-  /* #ececec */
-}
-
 .header .container,
 .header-list,
 .header-link,
@@ -136,7 +135,6 @@ address {
 
 .contacts-header {
   display: flex;
-  align-items: center;
   margin-left: auto;
 }
 
@@ -203,8 +201,6 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -289,6 +285,9 @@ h1[class="visually-hidden"] {
   color: var(--description-text-color);
 }
 
+.section-team {
+  background-color: #f5f4fa;
+}
 .team {
   font-weight: 700;
   font-size: 36px;
@@ -352,6 +351,9 @@ h1[class="visually-hidden"] {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .contacts {
   background: var(--footer-background-color);
   font-style: normal;
@@ -406,6 +408,11 @@ ul.portfolio-btn-list li {
 .services-list {
   display: flex;
   flex-wrap: wrap;
+}
+.services-item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
 }
 .services-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
