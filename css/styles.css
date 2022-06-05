@@ -408,11 +408,7 @@ ul.portfolio-btn-list li {
   display: flex;
   flex-wrap: wrap;
 }
-.services-item {
-  width: 370px;
-  height: 404px;
-  border: 1px solid #eeeeee;
-}
+
 .services-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
   margin-bottom: 30px;
