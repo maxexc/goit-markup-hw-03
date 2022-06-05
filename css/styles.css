@@ -81,6 +81,11 @@ a {
 address {
   text-decoration: none;
 }
+
+/* Рука-указатель */
+button {
+  cursor: pointer;
+}
 /* Сброс стилей / Reset styles */
 
 :root {
@@ -102,7 +107,7 @@ address {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px dashed red;
+  /* outline: 1px dashed red; */
 }
 
 /* header */
@@ -195,8 +200,6 @@ address {
   padding-top: 200px;
   padding-bottom: 30px;
   margin: 0 auto;
-  /*  */
-  outline: 1px solid red;
 }
 
 .main-btn {
@@ -228,9 +231,6 @@ address {
   border-radius: 4px;
 }
 
-button {
-  cursor: pointer;
-}
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background: #2196f3;
@@ -263,8 +263,6 @@ h1[class="visually-hidden"] {
 .description-block {
   width: 270px;
   display: inline-block;
-  /*  */
-  outline: 1px solid red;
 }
 .description-block:not(:last-child) {
   margin-right: var(--typical-margin);
@@ -316,8 +314,6 @@ h1[class="visually-hidden"] {
 
 .team-item:not(:last-child) {
   margin-right: var(--typical-margin);
-  /*  */
-  outline: 1px solid red;
 }
 
 .name {
@@ -394,7 +390,8 @@ h1[class="visually-hidden"] {
   background: #f5f4fa;
   border-radius: 4px;
   border: 1px solid #eeeeee;
-  padding: 4px 22px;
+  padding: 6px 22px;
+  height: 38px;
 }
 .portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
@@ -419,7 +416,15 @@ ul.portfolio-btn-list li {
 .services-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
   margin-bottom: 30px;
-  outline: 1px solid red;
+}
+.services-item {
+  display: flex;
+  flex-direction: column;
+}
+.div-services {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .review {
@@ -429,7 +434,6 @@ ul.portfolio-btn-list li {
   letter-spacing: 0.06em;
   color: var(--main-color);
   padding: 20px 24px 4px 24px;
-  outline: 1px dashed red;
 }
 .speciality {
   font-size: 16px;
