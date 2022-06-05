@@ -114,8 +114,14 @@ address {
   color: #2196f3;
 }
 
-.header-link .container,
+.header {
+  border-bottom: 1px solid #ececec;
+  /* #ececec */
+}
+
+.header .container,
 .header-list,
+.header-link,
 .header-nav {
   display: flex;
   align-items: center;
@@ -342,6 +348,7 @@ h1[class="visually-hidden"] {
 .contacts {
   background: var(--footer-background-color);
   font-style: normal;
+  padding-bottom: 60px;
 }
 .contact {
   font-weight: 400;
@@ -375,6 +382,8 @@ h1[class="visually-hidden"] {
 }
 .portfolio-btn-list {
   text-align: center;
+  padding-bottom: 64px;
+  margin-top: 94px;
 }
 ul.portfolio-btn-list li {
   display: inline-block;
@@ -383,6 +392,11 @@ ul.portfolio-btn-list li {
 .services-list {
   display: flex;
   flex-wrap: wrap;
+}
+.services-item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  outline: 1px solid red;
 }
 
 .review {
