@@ -375,7 +375,7 @@ h1[class="visually-hidden"] {
 /* Портфолио */
 
 .section-portfolio .container {
-  margin-top: 94px;
+  padding: 94px 0;
 }
 
 .portfolio-btn {
@@ -408,11 +408,13 @@ ul.portfolio-btn-list li {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .services-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  outline: 1px solid #eeeeee;
 }
 
 /* .services-item:not(:nth-child(3n + 3)) {
@@ -427,6 +429,7 @@ ul.portfolio-btn-list li {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  outline: ;
 }
 
 .review {
