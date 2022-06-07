@@ -407,12 +407,18 @@ ul.portfolio-btn-list li {
 .services-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
 }
 
-.services-item:not(:nth-child(3n + 3)) {
+.services-item {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+/* .services-item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+} */
 .services-item {
   display: flex;
   flex-direction: column;
